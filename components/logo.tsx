@@ -14,7 +14,7 @@ const Logo = () => {
       >
         <Image
           priority
-          src={"/assets/images/logo.svg"}
+          src={"/assets/images/Logo.svg"}
           alt="Dr. Serena Blake, PsyD (Clinical Psychologist)"
           width={64}
           className="rounded-md "
