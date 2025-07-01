@@ -9,6 +9,14 @@ import {
 } from "@/components/ui/card";
 import { DollarSign, User2, Users } from "lucide-react";
 
+export const metadata = {
+  title: {
+    default: "Services",
+  },
+  description:
+    "Explore the various therapeutic services offered by Dr. Serena Blake.",
+};
+
 export default function ServicesPage() {
   const prices = [
     {

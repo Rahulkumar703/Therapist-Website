@@ -5,6 +5,14 @@ import { Card, CardHeader, CardTitle } from "@/components/ui/card";
 import { Mail, Phone } from "lucide-react";
 import Link from "next/link";
 
+export const metadata = {
+  title: {
+    default: "Contact",
+  },
+  description:
+    "Get in touch with Dr. Serena Blake for compassionate and professional mental health support.",
+};
+
 export default function ContactPage() {
   return (
     <main className="flex flex-col">

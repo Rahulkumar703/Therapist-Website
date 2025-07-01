@@ -17,7 +17,10 @@ const plexMono = IBM_Plex_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Dr. Serena Blake, PsyD (Clinical Psychologist)",
+  title: {
+    default: "Dr. Serena Blake, PsyD (Clinical Psychologist)",
+    template: "%s | Dr. Serena Blake, PsyD (Clinical Psychologist)",
+  },
   description: "Therapist specializing in mental health and wellness",
 };
 

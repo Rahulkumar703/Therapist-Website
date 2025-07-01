@@ -13,6 +13,14 @@ import {
 import { User, Video } from "lucide-react";
 import Link from "next/link";
 
+export const metadata = {
+  title: {
+    default: "Home",
+  },
+  description:
+    "Welcome to Dr. Serena Blake's therapy practice, where we provide compassionate and professional mental health support.",
+};
+
 export default function HomePage() {
   return (
     <main className="flex flex-col gap-10">

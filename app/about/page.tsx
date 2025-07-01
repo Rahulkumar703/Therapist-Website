@@ -8,6 +8,14 @@ import {
 } from "@/components/ui/card";
 import Image from "next/image";
 
+export const metadata = {
+  title: {
+    default: "About",
+  },
+  description:
+    "Learn more about Dr. Serena Blake, her approach to therapy, and her professional background.",
+};
+
 export default function AboutPage() {
   return (
     <main className="flex flex-col gap-10">
