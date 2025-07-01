@@ -58,7 +58,7 @@ export default function ContactPage() {
         </section>
         <section className="flex-1 flex items-center justify-center p-2 sm:p-4  md:pl-10">
           <SlideIn direction="right" delay={0.3}>
-            <ContactForm className="sm:min-w-md" />
+            <ContactForm className="sm:min-w-md min-w-full" />
           </SlideIn>
         </section>
       </GlassContainer>

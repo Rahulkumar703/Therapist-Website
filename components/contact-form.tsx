@@ -85,7 +85,7 @@ export default function ContactForm({ className }: { className?: string }) {
 
   return isSubmitted ? (
     <Card
-      className={`w-full max-w-md bg-sidebar/60 flex items-center text-center md:mb-0 mb-auto ${className}`}
+      className={`w-full max-w-full md:max-w-md bg-sidebar/60 flex items-center text-center md:mb-0 mb-auto ${className}`}
     >
       <CheckCircle className="size-16 text-chart-1 mb-4" strokeWidth={2} />
       <CardContent>
@@ -117,7 +117,7 @@ export default function ContactForm({ className }: { className?: string }) {
     </Card>
   ) : (
     <Card
-      className={`w-full lg:max-w-xl lg:ml-auto bg-sidebar/60 ${className}`}
+      className={`w-full max-w-full lg:max-w-xl lg:ml-auto bg-sidebar/60 ${className}`}
     >
       <Form {...form}>
         <form

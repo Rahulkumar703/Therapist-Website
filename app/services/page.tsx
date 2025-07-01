@@ -31,8 +31,8 @@ export default function ServicesPage() {
     },
   ];
   return (
-    <main className="flex flex-col md:pt-[120px] sm:pt-[96px] pt-[80px] p-2 sm:p-4 ">
-      <section className="flex flex-col sm:items-start items-center text-center sm:text-left justify-center md:pl-10 sm:p-4 p-2 gap-6">
+    <main className="flex flex-col md:pt-[120px] sm:pt-[96px] pt-[80px] p-2 sm:p-4 container mx-auto">
+      <section className="container flex flex-col sm:items-start items-center text-center sm:text-left justify-center md:pl-10 sm:p-4 p-2 gap-6">
         <h1 className="text-4xl lg:text-5xl font-black max-w-lg">How I Help</h1>
         <p className="text-lg text-muted-foreground max-w-lg">
           Dr. Serena Blake offers therapeutic services tailored to meet the

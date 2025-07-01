@@ -1,3 +1,4 @@
+import About from "@/components/about";
 import { ZoomIn } from "@/components/animation";
 import Faqs from "@/components/faqs";
 import LandingPage from "@/components/landing-page";
@@ -38,12 +39,17 @@ export default function HomePage() {
             </Button>
           </Link>
         </div>
+
+        {/* About */}
+        <div className="sm:pl-10 sm:p-4 p-2 flex flex-col gap-6 overflow-hidden">
+          <About className="flex lg:flex-row flex-col-reverse flex-1 w-full gap-4" />
+        </div>
+
         {/* Why Choose Us */}
         <div className="sm:pl-10 sm:p-4 p-2 flex flex-col gap-6">
-          <h2 className="text-3xl font-bold">Why Choose Us</h2>
-          <div className="grid sm:grid-cols-2 grid-cols-1 gap-4 md:ml-auto">
+          <div className="grid sm:grid-cols-2 grid-cols-1 gap-4">
             <ZoomIn delay={0}>
-              <Card className="h-full">
+              <Card className="h-full max-w-sm md:mx-0 mx-auto">
                 <CardContent className="flex flex-col items-center text-center gap-2">
                   <CardTitle className="text-primary text-4xl font-black">
                     8+
@@ -53,7 +59,7 @@ export default function HomePage() {
               </Card>
             </ZoomIn>
             <ZoomIn delay={0.2}>
-              <Card>
+              <Card className="h-full max-w-sm md:mx-0 mx-auto">
                 <CardContent className="flex flex-col items-center text-center gap-2">
                   <CardTitle className="text-primary text-4xl font-black">
                     500+

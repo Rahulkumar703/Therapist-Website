@@ -1,4 +1,3 @@
-import BgCircle from "@/components/bg-circle";
 import GlassContainer from "@/components/glass-container";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
@@ -10,7 +9,6 @@ export default function LandingPage() {
   return (
     <GlassContainer className="flex overflow-hidden gap-2 min-h-[90vh] md:pt-[120px] sm:pt-[96px] pt-[80px]">
       <section className="relative flex-1 flex flex-col sm:items-start items-center text-center sm:text-left justify-center sm:pl-10 p-4 sm:pb-4 pb-6 overflow-hidden gap-6">
-        {/* <BgCircle className="absolute w-[500px] h-[500px] left-1/6 top-1/6 md:hidden -z-10 flex items-center justify-center -translate-x-1/2 blur-lg" /> */}
         <h1 className="text-4xl lg:text-5xl font-black max-w-lg">
           Find the best solution together.
         </h1>
@@ -28,9 +26,8 @@ export default function LandingPage() {
         </ZoomIn>
       </section>
       <section className="shrink-0 flex-col justify-end sm:p-4 sm:pb-0 p-2 pr-0 pb-0 md:flex hidden">
-        <BgCircle className="absolute xl:w-[600px] xl:h-[600px] lg:w-[500px] lg:h-[500px] w-[400px] h-[400px] lg:top-[300px] xl:bottom-[180px] top-1/2 flex items-center justify-center -translate-y-1/3 blur-lg" />
         <Image
-          src={"/assets/images/serena-blake-min.webp"}
+          src={"/assets/images/hero.svg"}
           alt="Dr. Serena Blake, PsyD (Clinical Psychologist)"
           width={600}
           height={600}
