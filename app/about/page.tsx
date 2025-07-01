@@ -49,6 +49,9 @@ export default function AboutPage() {
               alt="Dr. Serena Blake, PsyD (Clinical Psychologist)"
               width={600}
               height={600}
+              placeholder="blur"
+              blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAAXNSR0IArs4c6QAAAPlJREFUKFNjZICC0NBQZid1nryfv/46vXj/vqlj9ubTIClGmIL5XXmqgqysuwS4uWUuP3gwVfz29+Kw1av/whVsndtg8uvjxy1cjEyix2/cXq7l7JAaFlb0Ha7g0tEd/q9vHprNxfBH5B0D/w1uOf10Bxefw2AFL1684P798/P0X28fRbP+/8v0T0T137cff3JXLVeZAVZw+fQRVy5u7tkc/CJyf//+Z/z188efvwyMmWoqKnMZ////z3zxxMG8n28f97AwMzBxCUoyMAlIf/3263eaoZ7ecpACxmuXLrn/fv9g2s+PbxS+//rHwCyhvuvbt++p7u7ujwEwlnEJ9UahywAAAABJRU5ErkJggg=="
+              priority
               className="shrink-0 object-cover relative z-10 lg:w-[500px] lg:h-[500px] md:w-[300px] md:h-[300px] sm:w-[400px] sm:h-[400px] w-[300px] h-[300px] rounded-full overflow-hidden shadow-lg shadow-primary"
             />
           </ZoomIn>
