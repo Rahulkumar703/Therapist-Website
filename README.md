@@ -1,6 +1,6 @@
 # Dr. Serena Blake - Therapist Website
 
-[![Visit Website](https://therapist-website-demo.vercel.app/assets/images/logo.svg)](https://therapist-website-demo.vercel.app/)
+[![Visit Website](https://therapist-website-demo.vercel.app/assets/images/Logo.svg)](https://therapist-website-demo.vercel.app/)
 
 This repository contains the source code for a modern, responsive, and visually appealing website for Dr. Serena Blake, a clinical psychologist. The site is built with Next.js, TypeScript, and styled with Tailwind CSS and shadcn/ui. It includes smooth animations using Framer Motion to enhance the user experience.
 
