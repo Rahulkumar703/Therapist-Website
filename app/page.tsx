@@ -1,95 +1,103 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+import { ZoomIn } from "@/components/animation";
+import Faqs from "@/components/faqs";
+import LandingPage from "@/components/landing-page";
+import Services from "@/components/services";
+import { Button } from "@/components/ui/button";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import { User, Video } from "lucide-react";
+import Link from "next/link";
 
-export default function Home() {
+export default function HomePage() {
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol>
-          <li>
-            Get started by editing <code>app/page.tsx</code>.
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    <main className="flex flex-col gap-10">
+      {/* Hero Section */}
+      <LandingPage />
 
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.secondary}
-          >
-            Read our docs
-          </a>
+      <div className="container mx-auto flex flex-col gap-10 mb-10">
+        {/* Services */}
+        <div className="sm:pl-10 sm:p-4 p-2 flex flex-col gap-6">
+          <h2 className="text-3xl font-bold">Our Services</h2>
+          <Services />
+          <Link href="/services" className="ml-auto cursor-pointer">
+            <Button variant="link" className="cursor-pointer">
+              Learn More...
+            </Button>
+          </Link>
         </div>
-      </main>
-      <footer className={styles.footer}>
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+        {/* Why Choose Us */}
+        <div className="sm:pl-10 sm:p-4 p-2 flex flex-col gap-6">
+          <h2 className="text-3xl font-bold">Why Choose Us</h2>
+          <div className="grid sm:grid-cols-2 grid-cols-1 gap-4 md:ml-auto">
+            <ZoomIn delay={0}>
+              <Card className="h-full">
+                <CardContent className="flex flex-col items-center text-center gap-2">
+                  <CardTitle className="text-primary text-4xl font-black">
+                    8+
+                  </CardTitle>
+                  <CardDescription>Years of experience</CardDescription>
+                </CardContent>
+              </Card>
+            </ZoomIn>
+            <ZoomIn delay={0.2}>
+              <Card>
+                <CardContent className="flex flex-col items-center text-center gap-2">
+                  <CardTitle className="text-primary text-4xl font-black">
+                    500+
+                  </CardTitle>
+                  <CardDescription>Sessions</CardDescription>
+                </CardContent>
+              </Card>
+            </ZoomIn>
+          </div>
+        </div>
+
+        {/* Office Hours */}
+        <div className="sm:pl-10 sm:p-4 p-2 flex flex-col gap-6">
+          <h2 className="text-3xl font-bold">Office Hours</h2>
+
+          <div className={`grid grid-cols-1 sm:grid-cols-3 gap-4 w-full`}>
+            <ZoomIn delay={0}>
+              <Card className="h-full">
+                <CardHeader className="flex flex-col items-center text-center w-full">
+                  <User className="size-16 text-primary" />
+                </CardHeader>
+                <CardContent className="flex flex-col items-center text-center gap-2">
+                  <CardTitle className="text-lg font-semibold leading-tight">
+                    In Person
+                  </CardTitle>
+                  <CardDescription className="text-muted-foreground">
+                    Tuesday & Thursday: 10 AM - 6 PM
+                  </CardDescription>
+                </CardContent>
+              </Card>
+            </ZoomIn>
+            <ZoomIn delay={0.2}>
+              <Card className="">
+                <CardHeader className="flex flex-col items-center text-center w-full">
+                  <Video className="size-16 text-primary" />
+                </CardHeader>
+                <CardContent className="flex flex-col items-center text-center gap-2">
+                  <CardTitle className="text-lg font-semibold leading-tight">
+                    Virtual via Zoom
+                  </CardTitle>
+                  <CardDescription className="text-muted-foreground">
+                    Monday, Wednesday & Friday: 1 PM - 5 PM
+                  </CardDescription>
+                </CardContent>
+              </Card>
+            </ZoomIn>
+          </div>
+        </div>
+
+        {/* FAQ */}
+        <Faqs />
+      </div>
+    </main>
   );
 }
